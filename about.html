@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Niyantri Club - About Us</title>
+  <meta name='description' content='Learn the story behind Niyantri Club and our cozy coffee philosophy.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='min-h-screen transition-opacity duration-1000 opacity-0'>
+  <header>
+    <nav class='fixed w-full z-50 top-0 left-0 right-0 bg-black/20 backdrop-blur-md text-white'>
+      <div class='max-w-6xl mx-auto px-4 py-3 flex items-center justify-between'>
+        <a href='index.html' class='font-bold text-xl tracking-wide'>Niyantri Club</a>
+        <button id='menu-toggle' aria-label='Open Menu' class='md:hidden p-2 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300 ease-in-out'>
+          <span class='block w-6 h-0.5 bg-white rounded-sm mb-1 transition-all duration-300 ease-in-out'></span>
+          <span class='block w-6 h-0.5 bg-white rounded-sm mb-1 transition-all duration-300 ease-in-out'></span>
+          <span class='block w-6 h-0.5 bg-white rounded-sm transition-all duration-300 ease-in-out'></span>
+        </button>
+        <div class='hidden md:flex space-x-6 font-medium'>
+          <a href='index.html' class='hover:brightness-110 transition-all duration-300 ease-in-out'>Home</a>
+          <a href='menu.html' class='hover:brightness-110 transition-all duration-300 ease-in-out'>Menu</a>
+          <a href='about.html' class='hover:brightness-110 transition-all duration-300 ease-in-out'>About</a>
+          <a href='contact.html' class='hover:brightness-110 transition-all duration-300 ease-in-out'>Contact</a>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden absolute top-full left-0 w-full bg-black/70'>
+        <div class='py-2 px-4 space-y-2'>
+          <a href='index.html' class='block py-2 px-2 rounded hover:bg-white/10 transition-all duration-300'>Home</a>
+          <a href='menu.html' class='block py-2 px-2 rounded hover:bg-white/10 transition-all duration-300'>Menu</a>
+          <a href='about.html' class='block py-2 px-2 rounded hover:bg-white/10 transition-all duration-300'>About</a>
+          <a href='contact.html' class='block py-2 px-2 rounded hover:bg-white/10 transition-all duration-300'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='relative min-h-screen flex items-center justify-center text-center overflow-hidden' aria-label='Hero'>
+      <div class='absolute inset-0'>
+        <img src="https://images.pexels.com/photos/3783524/pexels-photo-3783524.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt='Cozy café interior' class='w-full h-full object-cover'>
+        <div class='absolute inset-0 bg-black/40'></div>
+      </div>
+      <div class='relative z-10 max-w-3xl px-6 py-12'>
+        <h1 class='text-4xl md:text-5xl font-extrabold text-white leading-tight'>Our Story</h1>
+        <p class='mt-4 text-white/90 text-lg'>Niyantri Club began as a quiet corner for neighbors to connect over coffee, pastry, and good vibes. We believe warmth grows when shared.</p>
+        <div class='mt-6 flex justify-center gap-4'>
+          <a href='index.html' class='inline-block bg-amber-500 hover:brightness-110 hover:scale-105 transition-all duration-300 ease-in-out text-white px-6 py-3 rounded-full'>Back Home</a>
+        </div>
+      </div>
+    </section>
+
+    <section class='py-16 px-6' aria-label='Our Philosophy'>
+      <div class='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div>
+          <h2 class='text-2xl font-semibold mb-2'>A Warmth-First Philosophy</h2>
+          <p class='text-gray-700'>We craft each cup with care, choose beans from sustainable farms, and design spaces that invite conversation and calm. Our baristas are neighbors, and every order is a hello.</p>
+        </div>
+        <div>
+          <img src='https://pixabay.com/get/gcbb7c68eee7b477481660a1e73c535ebf0d622408384d222f06a51d9d91a7de2d5e0f73fc05f2d513d5368823751ee7b911f752fb04da9aaacdd723ee04651f8_640.jpg' alt='Barista making coffee' class='w-full h-60 object-cover rounded-lg'>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-white py-12'>
+    <div class='max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold mb-2'>Niyantri Club</h3>
+        <p class='text-gray-400'>Join us in Hyderabad for cozy moments and great coffee.</p>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Links</h4>
+        <ul class='space-y-2 text-gray-300'>
+          <li><a href='index.html' class='hover:text-white transition-all duration-300'>Home</a></li>
+          <li><a href='menu.html' class='hover:text-white transition-all duration-300'>Menu</a></li>
+          <li><a href='about.html' class='hover:text-white transition-all duration-300'>About</a></li>
+          <li><a href='contact.html' class='hover:text-white transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='font-semibold mb-2'>Newsletter</h4>
+        <form class='flex'>
+          <input aria-label='Email' type='email' placeholder='Email address' class='w-full px-3 py-2 rounded-l-md bg-white/20 text-white placeholder-white/70 outline-none' />
+          <button type='submit' class='bg-amber-500 text-white px-4 py-2 rounded-r-md transition-all duration-300'>Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr class='border-gray-700 my-6'>
+    <p class='text-center text-sm text-gray-400'>© 2025 Niyantri Club, Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) { menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden')); }
+    window.addEventListener('load', () => document.body.classList.add('opacity-100'));
+    const reveals = document.querySelectorAll('[data-animate]');
+    const obs = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.remove('opacity-0','translate-y-6'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
+    reveals.forEach((el) => { if (!el.classList.contains('opacity-0')) { el.classList.add('opacity-0','translate-y-6'); } obs.observe(el); });
+  </script>
+</body>
+</html>
